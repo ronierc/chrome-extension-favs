@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
 
 :root{
-    --color-1: #3C6B70;
-    --color-2: #C7E8E3;
-    --color-3: #79BEB9;
-    --color-4: #B8D6D1;
+    --color-primary: #FCA311;
+    --color-secondary: #b16e04;
   }
 
 body{
@@ -20,7 +18,7 @@ h1{
 }
 
 i{
-    color: #FCA311;
+    color: var(--color-primary);
 }
 
 #navbar{
@@ -35,11 +33,26 @@ i{
 
 
 .btn-link{
-    color: #FCA311 !important;
+    color: var(--color-primary) !important;
 }
 
 .content{
     padding: 40px 50px;
     justify-content: center;
     text-align: center;
+}
+
+.form-group{
+    margin-bottom: 20px !important;
+    text-align: left;
+}
+.btn-favs{
+    background-color: var(--color-primary);
+    border-color: var(--color-secondary);
+    font-weight: bolder;
+    width: 100%;
+    &:hover{
+        background-color: var(--color-secondary);
+        border-color: var(--color-secondary);
+    }
 }
