@@ -8,7 +8,8 @@
 body{
     font-family: 'Red Hat Display', sans-serif;
     width: 100%; /*  max permitivo 750px; */
-    min-width: 600px;
+    min-width: 500px;
+    max-width: 750px;
     overflow-x: hidden !important;
 }
 
@@ -56,3 +57,17 @@ i{
         border-color: var(--color-secondary);
     }
 }
+
+.form-control:focus{
+    border-color: var(--color-secondary);
+    box-shadow: 0 0 0 0.25rem rgba(252, 163, 1,.25);
+}
+
+
+
+
+/* Barra de Rolagem */
+body::-webkit-scrollbar-track { background-color: var(--color-secondary); }
+body::-webkit-scrollbar { width: 5px; background: var(--color-secondary);}
+body::-webkit-scrollbar-thumb { background: var(--color-primary); border-radius: 5px;  }
+body::-webkit-scrollbar-corner{ background: var(--color-primary); }
