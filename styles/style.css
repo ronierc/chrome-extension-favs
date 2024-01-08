@@ -3,13 +3,14 @@
 :root{
     --color-primary: #FCA311;
     --color-secondary: #b16e04;
+    --color-tertiary: #242423;
   }
 
 body{
     font-family: 'Red Hat Display', sans-serif;
-    width: 100%; /*  max permitivo 750px; */
-    min-width: 500px;
-    max-width: 750px;
+    width: 750px; /*  max permitivo 750px; */
+    /* min-width: 500px; */
+    /* max-width: 750px; */
     overflow-x: hidden !important;
 }
 
@@ -66,7 +67,6 @@ i{
 #category-container{
     margin-top: 30px;
 }
-
 .category-header{
     background-color: #242423;
     width: 100%;
@@ -77,8 +77,6 @@ i{
     justify-content: left;
     text-align: left;
 }
-
-
 .category-body{
     width: 100%;
     padding: 7px 20px;
@@ -94,6 +92,41 @@ i{
 }
 
 
+#links-container{
+    margin-top: 30px;
+}
+.link-header{
+    background-color: var(--color-tertiary);
+    border: 1px solid var(--color-tertiary);
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 3px 3px rgb(180,180,180);
+
+    /* width: 30px !important; */
+    margin-bottom: 15px;
+}
+.link-body{
+    border: 1px solid var(--color-tertiary);
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 1px 3px 3px rgb(180,180,180);
+    padding: 10px 0px 10px 30px !important;
+    margin-bottom: 15px;
+}
+
+.link-title{
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.btn-nopadding{
+    padding: 0 !important;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Barra de Rolagem */
 body::-webkit-scrollbar-track { background-color: var(--color-secondary); }
